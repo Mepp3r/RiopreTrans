@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    {% block form%}
+    <form method="POST">
+        <div>
+            <b><h2>Horarios de Ônibus</h2></b>
+            <b>
+                <h4>
+                    ID Ponto <input type="text" name="id"  id="id" size="3">
+                    <input type="submit" name="pass" id="pass" value="Enviar">
+                </h4>
+            </b>
+            <p></p>
+        </div>
+</form>
+    {% endblock %}
+    <div>
+        <table border="">
+            <thead>
+                <tr>
+                    <th>ID Ponto</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3514</td>
+                    <td>Terminal Linha Itamarati</td>
+                </tr>
+                <tr>
+                    <td>1033</td>
+                    <td>Terminal Linha Santa Luzia</td>
+                </tr>
+                <tr>
+                    <td>1961</td>
+                    <td>Fatec - Eldorado</td>
+                </tr>
+                <tr>
+                    <td>1371</td>
+                    <td>Fatec - Valentim Gentil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
